@@ -1,0 +1,11 @@
+consul:
+    build: consul
+    ports :
+        - "8500:8500"
+
+vault:
+    build: vault
+    ports:
+        - "8200:8200"
+    links:
+        - consul:consul.wa.local

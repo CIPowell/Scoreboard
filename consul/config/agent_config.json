@@ -1,0 +1,10 @@
+{
+  "bootstrap" : true,
+  "client_addr" : "0.0.0.0",
+  "bind_addr" : "0.0.0.0",
+  "data_dir" : "/var/consul",
+  "datacenter" : "local",
+  "domain" : "sb.local",
+  "server" : true,
+  "ui_dir" : "/var/www"
+}

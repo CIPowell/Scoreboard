@@ -9,3 +9,11 @@ vault:
         - "8200:8200"
     links:
         - consul:consul.wa.local
+
+vaultinit:
+    image: nginx
+    volumes:
+      - ./vaultinit:/usr/share/nginx/html
+      - ./vaultinit/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "8080:80"
